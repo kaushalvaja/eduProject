@@ -1,7 +1,7 @@
 FROM polinux/httpd-php
 
-RUN rm -rf /var/www/html/
+ADD webphp /var/www/html/
 
-ADD eduproject /var/www/html/
+RUN rm /var/www/html/info.php
 
 CMD apachectl -D FOREGROUND

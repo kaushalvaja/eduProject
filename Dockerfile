@@ -1,6 +1,6 @@
 FROM polinux/httpd-php
 
-ADD eduProject /var/www/html/
+ADD eduproject /var/www/html/
 
 RUN rm -rf /var/www/html/
 
